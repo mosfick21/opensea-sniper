@@ -6,7 +6,7 @@ Buys an NFT on OpenSea as soon as someone lists it at or below your price. Works
 
 | What | Where to get it |
 |---|---|
-| Node.js 20 or newer | https://nodejs.org (download the LTS version and install) |
+| Node.js 22 or newer | https://nodejs.org (download the LTS version and install) |
 | OpenSea API key | https://opensea.io → Profile → Settings → Developer → Create API key |
 | Wallet private key | MetaMask → ⋮ → Account details → Show private key. **Use a new wallet with only the coins you plan to spend.** |
 | Coins on the chain | Send the chain’s coin (ETH, POL, APE...) to that wallet, on the same chain as the collection |

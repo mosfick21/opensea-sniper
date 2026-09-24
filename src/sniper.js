@@ -4,6 +4,11 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { createInterface } from "node:readline/promises";
 import { Wallet, JsonRpcProvider, Interface, parseEther, formatEther, parseUnits, id } from "ethers";
 
+if (Number(process.versions.node.split(".")[0]) < 22) {
+  console.error(`Node.js 22 or newer is needed (you have ${process.version}). Download it from https://nodejs.org`);
+  process.exit(1);
+}
+
 // .env sits next to src/, so the bot works from any working directory.
 try { process.loadEnvFile(new URL("../.env", import.meta.url).pathname.replace(/^\/(\w:)/, "$1")); } catch {}
 
