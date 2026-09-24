@@ -1,0 +1,12 @@
+{
+  "name": "opensea-sniper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/sniper.js"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
+  }
+}
